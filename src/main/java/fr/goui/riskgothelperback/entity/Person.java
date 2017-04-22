@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Represents the persons table.
+ * Represents the person table.
  */
 @Entity
 public class Person {

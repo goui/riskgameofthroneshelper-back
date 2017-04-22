@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * Represents the games table.
+ * Represents the game table.
  */
 @Entity
 public class Game {

@@ -12,7 +12,7 @@ import javax.persistence.OneToOne;
 import java.util.Objects;
 
 /**
- * Represents the players table.
+ * Represents the player table.
  */
 @Entity
 public class Player {
