@@ -2,12 +2,11 @@ package fr.goui.riskgothelperback.service;
 
 import fr.goui.riskgothelperback.dao.PersonRepository;
 import fr.goui.riskgothelperback.dto.PersonDTO;
-import fr.goui.riskgothelperback.entity.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * The service for the persons.
@@ -19,9 +18,11 @@ public class PersonService {
     private PersonRepository personRepository;
 
     public List<PersonDTO> getAllPersons() {
-        List<PersonDTO> personDTOs = new ArrayList<>();
-        List<Person> persons = personRepository.findAll();
-        // TODO map persons
-        return personDTOs;
+        return personRepository
+                .findAll()
+                .stream()
+                .map(person ->
+                        new PersonDTO(person.getName(), person.getFirst(), person.getSecond(), person.getThird()))
+                .collect(Collectors.toList());
     }
 }

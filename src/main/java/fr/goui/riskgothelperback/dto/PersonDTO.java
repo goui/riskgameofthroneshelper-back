@@ -37,4 +37,11 @@ public class PersonDTO {
     @Setter
     @NotNull
     private int third;
+
+    public PersonDTO(String name, int first, int second, int third) {
+        this.name = name;
+        this.first = first;
+        this.second = second;
+        this.third = third;
+    }
 }
