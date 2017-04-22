@@ -1,0 +1,32 @@
+{
+  "colors": [
+    {
+      "name": "grey",
+      "hexCode": "#cfcfcf"
+    },
+    {
+      "name": "red",
+      "hexCode": "#f44336"
+    },
+    {
+      "name": "black",
+      "hexCode": "#000000"
+    },
+    {
+      "name": "yellow",
+      "hexCode": "#ffeb3b"
+    },
+    {
+      "name": "cyan",
+      "hexCode": "#00bcd4"
+    },
+    {
+      "name": "green",
+      "hexCode": "#4caf50"
+    },
+    {
+      "name": "orange",
+      "hexCode": "#ff9800"
+    }
+  ]
+}

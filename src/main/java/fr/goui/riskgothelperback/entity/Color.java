@@ -76,4 +76,12 @@ public class Color {
     public int hashCode() {
         return Objects.hash(id, hexCode, name);
     }
+
+    @Override
+    public String toString() {
+        return "Color{" +
+                "hexCode='" + hexCode + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
