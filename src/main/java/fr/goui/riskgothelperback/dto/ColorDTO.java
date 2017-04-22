@@ -21,4 +21,9 @@ public class ColorDTO {
     @Setter
     @NotNull
     private String name;
+
+    public ColorDTO(String hexCode, String name) {
+        this.hexCode = hexCode;
+        this.name = name;
+    }
 }
