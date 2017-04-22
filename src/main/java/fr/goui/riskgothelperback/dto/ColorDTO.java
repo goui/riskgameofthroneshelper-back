@@ -15,7 +15,7 @@ public class ColorDTO {
     @Getter
     @Setter
     @NotNull
-    private int code;
+    private String hexCode;
 
     @Getter
     @Setter

@@ -22,7 +22,7 @@ public class Color {
     private long id;
 
     @Column(nullable = false)
-    private int code;
+    private String hexCode;
 
     @Column(nullable = false)
     private String name;
@@ -38,12 +38,12 @@ public class Color {
         this.id = id;
     }
 
-    public int getCode() {
-        return code;
+    public String getHexCode() {
+        return hexCode;
     }
 
-    public void setCode(int code) {
-        this.code = code;
+    public void setHexCode(String hexCode) {
+        this.hexCode = hexCode;
     }
 
     public String getName() {
@@ -68,12 +68,12 @@ public class Color {
         if (o == null || getClass() != o.getClass()) return false;
         Color color = (Color) o;
         return id == color.id &&
-                code == color.code &&
+                Objects.equals(hexCode, color.hexCode) &&
                 Objects.equals(name, color.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, code, name);
+        return Objects.hash(id, hexCode, name);
     }
 }
