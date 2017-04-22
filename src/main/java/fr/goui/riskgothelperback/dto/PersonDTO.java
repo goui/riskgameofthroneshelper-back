@@ -12,6 +12,9 @@ import javax.validation.constraints.NotNull;
 @EqualsAndHashCode
 public class PersonDTO {
 
+    @Getter
+    @Setter
+    @NotNull
     private String name;
 
     /**
@@ -37,6 +40,9 @@ public class PersonDTO {
     @Setter
     @NotNull
     private int third;
+
+    public PersonDTO() {
+    }
 
     public PersonDTO(String name, int first, int second, int third) {
         this.name = name;
